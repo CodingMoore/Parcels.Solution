@@ -19,17 +19,18 @@ namespace Parcels.Models
       Height = height;
       Weight = weight;
       CostToShip = 5;
+      _packages.Add(this);
     }
 
-    public static int Volume()
-    {
+    // public static int Volume()
+    // {
 
-    }
+    // }
 
-    public static int CostToShip()
-    {
-      
-    }
+    // public static int CalcShip()
+    // {
+
+    // }
     public static List<Parcel> GetAll()
     {
       return _packages;

@@ -1,0 +1,20 @@
+Parallels: ToDoList ---> Parcels
+
+CLASS: 
+
+Item class : Parcel class
+
+CONSTRUCTORS: 
+
+Item constructor : Parcel constructor
+
+PROPERTIES: 
+
+Description property : Length, Width, Height, weight, cost to ship, volume
+
+List<Item> instances : List<Parcel> instances
+
+List<Item> GetAll() : List<Parcel> GetAll() *DONE
+<Item> ClearAll()   : <Parcel> ClearAll()   *DONE
+                    : <Parcel> Volume() (calculate volume of package) *DONE
+                    : <Parcel> CostToShip() (where we will take in our width, height, etc.)

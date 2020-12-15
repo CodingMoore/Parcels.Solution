@@ -1,12 +1,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Parcels.Models;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
 namespace Parcels.Test
 {
   [TestClass]
-  public class ParcelTests : IDisposeable
+  public class ParcelTests : IDisposable
   {
     public void Dispose()
     {
@@ -17,8 +17,8 @@ namespace Parcels.Test
 
     public void ParcelConstructor_CreateInstanceOfParcel_True()
     {
-      Parcel Box = new Parcel(5, 6, 7);
-      Assert.AreEqual(6, Parcel.GetAll()[0].Length);
+      Parcel box = new Parcel(5, 6, 7, 10);
+      Assert.AreEqual(typeof(int), box.GetType());
     }
   }
 }
