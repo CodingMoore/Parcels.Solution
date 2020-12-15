@@ -89,5 +89,12 @@ namespace Parcels.Test
       Parcel box = new Parcel(3, 4, 5, 10);
       Assert.AreEqual(60, box.Volume());
     }
+
+    [TestMethod]
+    public void CalcShip_CalcShippingCost_True()
+    {
+      Parcel box = new Parcel(7, 8, 9, 10);
+      Assert.AreEqual(17, box.CalcShip());
+    }
   }
 }

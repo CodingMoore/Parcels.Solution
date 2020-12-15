@@ -60,10 +60,10 @@ namespace Parcels.Models
       return this.Length * this.Width * this.Height;
     }
 
-    // public static int CalcShip()
-    // {
-
-    // }
+    public double CalcShip()
+    {
+      return (this.Volume() * (this.Weight)) / 300;
+    }
     public static List<Parcel> GetAll()
     {
       return _packages;
