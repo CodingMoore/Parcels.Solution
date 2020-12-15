@@ -83,5 +83,11 @@ namespace Parcels.Test
       Assert.AreEqual(7, Parcel.GetAll()[0].GetLength());
     }
 
+    [TestMethod]
+    public void Volume_ReturnParcelVolume_True()
+    {
+      Parcel box = new Parcel(3, 4, 5, 10);
+      Assert.AreEqual(60, box.Volume());
+    }
   }
 }
