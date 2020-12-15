@@ -94,7 +94,7 @@ namespace Parcels.Test
     public void CalcShip_CalcShippingCost_True()
     {
       Parcel box = new Parcel(7, 8, 9, 10);
-      Assert.AreEqual(17, box.CalcShip());
+      Assert.AreEqual(16, box.CalcShip());
     }
   }
 }
