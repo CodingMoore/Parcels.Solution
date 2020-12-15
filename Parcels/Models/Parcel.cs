@@ -19,7 +19,7 @@ namespace Parcels.Models
       Height = height;
       Weight = weight;
       CostToShip = 5;
-      _packages.Add(this);
+      // _packages.Add(this);
     }
 
     public int GetLength()

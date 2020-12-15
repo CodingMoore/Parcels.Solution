@@ -22,6 +22,20 @@ namespace Parcels.Test
     }
 
     [TestMethod]
+    public void GetAll_ReturnsEmptyList_True()
+    {
+      // Arrange
+      List<Parcel> newList = new List<Parcel> { };
+      Parcel newItem = new Parcel(9, 10, 11, 12);
+      newList.Add(newItem);
+      // Act
+      List<Parcel> result = Parcel.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
 
     public void ParcelConstructor_ReturnProperties_True()
     {
