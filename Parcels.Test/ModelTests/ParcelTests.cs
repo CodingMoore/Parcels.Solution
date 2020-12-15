@@ -29,7 +29,7 @@ namespace Parcels.Test
       Assert.AreEqual(5, box.GetLength());
       Assert.AreEqual(6, box.GetWidth());
       Assert.AreEqual(7, box.GetHeight());
-      Assert.AreEqual(11, box.GetWeight());
+      Assert.AreEqual(10, box.GetWeight());
     } 
   }
 }
