@@ -26,11 +26,10 @@ namespace Parcels.Test
     public void ParcelConstructor_ReturnProperties_True()
     {
       Parcel box = new Parcel(5, 6, 7, 10);
-      Assert.AreEqual(5, box.Length);
-      Assert.AreEqual(6, box.Width);
-      Assert.AreEqual(7, box.Height);
-      Assert.AreEqual(11, box.Weight);
-
+      Assert.AreEqual(5, box.GetLength());
+      Assert.AreEqual(6, box.GetWidth());
+      Assert.AreEqual(7, box.GetHeight());
+      Assert.AreEqual(11, box.GetWeight());
     } 
   }
 }

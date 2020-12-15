@@ -22,6 +22,22 @@ namespace Parcels.Models
       _packages.Add(this);
     }
 
+    public int GetLength()
+    {
+      return this.Length;
+    }
+    public int GetWidth()
+    {
+      return this.Width;
+    }
+    public int GetHeight()
+    {
+      return this.Height;
+    }
+    public int GetWeight()
+    {
+      return this.Weight;
+    }
     // public static int Volume()
     // {
 
