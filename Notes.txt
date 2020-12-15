@@ -18,3 +18,8 @@ List<Item> GetAll() : List<Parcel> GetAll() *DONE
 <Item> ClearAll()   : <Parcel> ClearAll()   *DONE
                     : <Parcel> Volume() (calculate volume of package) *DONE
                     : <Parcel> CostToShip() (where we will take in our width, height, etc.)
+
+
+
+METHOD : TEST
+
