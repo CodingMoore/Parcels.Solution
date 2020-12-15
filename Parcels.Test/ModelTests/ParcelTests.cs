@@ -33,11 +33,25 @@ namespace Parcels.Test
     } 
 
     [TestMethod]
+    public void ParcelSetters_UpdatePropertyValues_True()
+    {
+      Parcel box = new Parcel(5, 6, 7, 10);
+      box.SetLength(1);
+      box.SetWidth(2);
+      box.SetHeight(3);
+      box.SetWeight(4);
+      Assert.AreEqual(1, Parcel.GetAll()[0].GetLength());
+      Assert.AreEqual(2, Parcel.GetAll()[0].GetWidth());
+      Assert.AreEqual(3, Parcel.GetAll()[0].GetHeight());
+      Assert.AreEqual(5, Parcel.GetAll()[0].GetWeight());
+    }
+
+    [TestMethod]
     public void ParcelConstructor_AddToPackages_True()
     {
       Parcel box = new Parcel(7, 8, 9, 10);
       Assert.AreEqual(7, Parcel.GetAll()[0].GetLength());
     }
-    
+
   }
 }
