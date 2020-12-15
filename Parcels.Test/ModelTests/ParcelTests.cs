@@ -35,7 +35,7 @@ namespace Parcels.Test
     [TestMethod]
     public void ParcelConstructor_AddToPackages_True()
     {
-      Parcel box = new Parcel(5, 8, 9, 10);
+      Parcel box = new Parcel(7, 8, 9, 10);
       Assert.AreEqual(7, Parcel.GetAll()[0].GetLength());
     }
 
