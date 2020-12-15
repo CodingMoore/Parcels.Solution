@@ -41,7 +41,7 @@ namespace Parcels.Test
       // Arrange
       Parcel newItem0 = new Parcel(2, 3, 4, 5);
       Parcel newItem1 = new Parcel(5, 6, 7, 8);
-      List<Parcel> newList = new List<Parcel> { newItem0 };
+      List<Parcel> newList = new List<Parcel> {  };
 
       // Act
       Parcel.ClearAll();
