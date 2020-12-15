@@ -55,7 +55,7 @@ namespace Parcels.Models
     {
       this.Weight = weight;
     }
-    public static int Volume()
+    public int Volume()
     {
       return this.Length * this.Width * this.Height;
     }
