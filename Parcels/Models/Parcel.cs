@@ -38,6 +38,23 @@ namespace Parcels.Models
     {
       return this.Weight;
     }
+
+    public void SetLength(int length)
+    {
+      this.Length = length;
+    }
+    public void SetWidth(int width)
+    {
+      this.Width = width;
+    }
+    public void SetHeight(int height)
+    {
+      this.Height = height;
+    }
+    public void SetWeight(int weight)
+    {
+      this.Weight = weight;
+    }
     // public static int Volume()
     // {
 

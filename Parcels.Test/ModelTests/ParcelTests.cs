@@ -38,16 +38,6 @@ namespace Parcels.Test
       Parcel box = new Parcel(7, 8, 9, 10);
       Assert.AreEqual(7, Parcel.GetAll()[0].GetLength());
     }
-
+    
   }
 }
-
-// _packages =
-// {
-//   {
-//     box
-//   }
-//   {
-//     box2
-//   }
-// }
