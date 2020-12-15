@@ -18,7 +18,7 @@ namespace Parcels.Test
     public void ParcelConstructor_CreateInstanceOfParcel_True()
     {
       Parcel box = new Parcel(5, 6, 7, 10);
-      Assert.AreEqual(typeof(int), box.GetType());
+      Assert.AreEqual(typeof(Parcel), box.GetType());
     }
   }
 }
