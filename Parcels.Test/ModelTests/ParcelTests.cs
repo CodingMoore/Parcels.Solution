@@ -43,7 +43,7 @@ namespace Parcels.Test
       Assert.AreEqual(1, Parcel.GetAll()[0].GetLength());
       Assert.AreEqual(2, Parcel.GetAll()[0].GetWidth());
       Assert.AreEqual(3, Parcel.GetAll()[0].GetHeight());
-      Assert.AreEqual(5, Parcel.GetAll()[0].GetWeight());
+      Assert.AreEqual(4, Parcel.GetAll()[0].GetWeight());
     }
 
     [TestMethod]
