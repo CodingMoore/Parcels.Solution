@@ -23,3 +23,5 @@ List<Item> GetAll() : List<Parcel> GetAll() *DONE
 
 METHOD : TEST
 
+Volume() : DONE
+ClearAll() : DONE
