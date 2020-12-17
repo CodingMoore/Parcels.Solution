@@ -1,22 +1,22 @@
-using Microsoft.AspNetCor.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Parcels.Models;
 using System.Collections.Generic;
 
 namespace Parcels.Controllers
 {
-  public class ParcelsController : Controllers
+  public class ParcelsController : Controller
   {
     [HttpGet("/parcels")]
     public ActionResult Index()
     {
-      List<Parcels> allParcels = Parcel.GetAll();
-      return View();
+      List<Parcel> allParcels = Parcel.GetAll();
+      return View(allParcels);
     }
     
     [HttpGet("/parcels/new")]
     public ActionResult New()
     {
-      return view();
+      return View();
     }
 
     [HttpPost("/parcels")]

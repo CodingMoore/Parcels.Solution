@@ -1,4 +1,4 @@
-using Microsoft.AspNetCor.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Parcels.Controllers
 {

@@ -99,5 +99,17 @@ namespace Parcels.Test
       Assert.AreEqual(5, box1.CalcShip());
 
     }
+
+    [TestMethod]
+    public void BoxNum_CreateUniqueIdForParcel_True()
+    {
+      Parcel box = new Parcel(5, 6, 7, 10);
+      Parcel box2 = new Parcel(1, 2, 3, 11);
+      Parcel box3 = new Parcel(1, 2, 3, 11);
+      Parcel box4 = new Parcel(1, 2, 3, 11);
+      Parcel box5 = new Parcel(1, 2, 3, 11);
+      Parcel box6 = new Parcel(1, 2, 3, 11);
+      Assert.AreEqual("Box6", box6.GetName());
+    }
   }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace Parcels.Models
 {
@@ -9,6 +10,8 @@ namespace Parcels.Models
     private int Height { get; set; }
     private int Weight { get; set; }
     private int CostToShip { get; set; }
+    private int Id {get; set; }
+    private string Name { get; set; }
 
     private static List<Parcel> _packages = new List<Parcel> {};
 
@@ -20,8 +23,32 @@ namespace Parcels.Models
       Weight = weight;
       CostToShip = 5;
       _packages.Add(this);
+      Id = BoxNum();
+      Name = "Box" + this.Id;
     }
-
+    
+    public int BoxNum()
+    {
+      int uniqueNum = 0;
+      if (_packages.Count == 0)
+      {
+        return 1;
+      }
+      else
+      {
+        for (int i=1; i <= 100; i++)
+        {
+          if(_packages.Exists(x => x.Id == i))
+          {
+          }
+          else
+          {
+            return uniqueNum += i;
+          }
+        }
+        return uniqueNum;
+      }
+    }
     public int GetLength()
     {
       return this.Length;
@@ -37,6 +64,14 @@ namespace Parcels.Models
     public int GetWeight()
     {
       return this.Weight;
+    }
+    public int GetId()
+    {
+      return this.Id;
+    }
+    public string GetName()
+    {
+      return this.Name;
     }
 
     public void SetLength(int length)
