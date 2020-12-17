@@ -59,6 +59,21 @@ namespace Shipments.Test
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsCorrectShipment_Shipment()
+    {
+      //Arrange
+      string name01 = "Ground";
+      string name02 = "Express";
+      Shipment newShipment1 = new Shipment(name01);
+      Shipment newShipment2 = new Shipment(name02);
+
+      // Act
+      Shipment result = Shipment.Find(1);
+
+      // Assert
+      Assert.AreEqual(newShipment1, result);
+    }
 
   }
 }
