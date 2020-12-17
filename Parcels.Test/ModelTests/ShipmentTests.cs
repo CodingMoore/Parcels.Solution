@@ -21,12 +21,44 @@ namespace Shipments.Test
     }
 
     [TestMethod]
-    public void ShipmentConstructor_ReturnNameOfShipment_True()
+    public void GetAll_ReturnsAllShipmentObjects_ShipmentList()
     {
-      string shipName = "Ground";
-      Shipment shipType = new Shipment(shipName);
-      Assert.AreEqual(shipName, Shipment.GetAll()[0].Name);
+      // Arrange
+      string name01 = "Ground";
+      string name02 = "Express";
+      Shipment newShipment1 = new Shipment(name01);
+      Shipment newShipment2 = new Shipment(name02);
+      List<Shipment> newList = new List<Shipment> { newShipment1, newShipment2 };
+
+      // Act
+      List<Shipment> result = Shipment.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
+    public void GetName_ReturnNameOfShipment_True()
+    {
+      string name = "Ground";
+      Shipment newShipment = new Shipment(name);
+      Assert.AreEqual(name, Shipment.GetAll()[0].Name);
     }
     
+    [TestMethod]
+    public void GetId_ReturnsShipmentId_Int()
+    {
+      //Arrange
+      string name = "Test Shipment";
+      Shipment newShipment = new Shipment(name);
+
+      // Act
+      int result = newShipment.Id;
+
+      // Assert
+      Assert.AreEqual(1, result);
+    }
+
+
   }
 }
