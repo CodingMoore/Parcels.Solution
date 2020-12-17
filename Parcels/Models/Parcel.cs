@@ -30,25 +30,19 @@ namespace Parcels.Models
     public int BoxNum()
     {
       int uniqueNum = 0;
-      if (_packages.Count == 0)
+      for (int i=1; i <= 100; i++)
       {
-        return 1;
-      }
-      else
-      {
-        for (int i=1; i <= 100; i++)
+        if(_packages.Exists(x => x.Id == i))
         {
-          if(_packages.Exists(x => x.Id == i))
-          {
-          }
-          else
-          {
-            return uniqueNum += i;
-          }
         }
-        return uniqueNum;
+        else
+        {
+          return uniqueNum += i;
+        }
       }
+      return uniqueNum;
     }
+    
     public int GetLength()
     {
       return this.Length;
