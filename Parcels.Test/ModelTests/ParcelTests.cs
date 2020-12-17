@@ -106,10 +106,12 @@ namespace Parcels.Test
       Parcel box = new Parcel(5, 6, 7, 10);
       Parcel box2 = new Parcel(1, 2, 3, 11);
       Parcel box3 = new Parcel(1, 2, 3, 11);
-      Parcel box4 = new Parcel(1, 2, 3, 11);
-      Parcel box5 = new Parcel(1, 2, 3, 11);
-      Parcel box6 = new Parcel(1, 2, 3, 11);
-      Assert.AreEqual("Box6", box6.GetName());
+      Assert.AreEqual(2, box3.GetId());
     }
+
+    // Parcel box = new Parcel(5, 6, 7, 10);
+    //   Parcel box2 = new Parcel(1, 2, 3, 11);
+    //   Parcel box3 = new Parcel(1, 2, 3, 11);
+    //   Assert.AreEqual("Box6", box6.GetName());
   }
 }
