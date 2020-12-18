@@ -30,7 +30,7 @@ namespace Parcels.Models
     public int BoxNum()
     {
       int uniqueNum = 0;
-      for (int i=1; i <= 100; i++)
+      for (int i = 1; i <= 100; i++)
       {
         if(_packages.Exists(x => x.Id == i))
         {

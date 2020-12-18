@@ -1,0 +1,35 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Add a new item package.</h1>
+
+
+<form action="/shipments/@Model.Id/parcels" method="post">
+  <select name="idVal">
+    <option value="1">Ground</option>
+    <option value="2">Express</option>
+    <option value="3">Next-Day</option>
+  </select>
+  <input id="length" name="length" type="number">
+  <label for="length">Length (inches)</label>
+  <input id="width" name="width" type="number">
+  <label for="width">Width (inches)</label>
+  <input id="height" name="height" type="number">
+  <label for="height">Height (inches)</label>
+  <input id="weight" name="weight" type="number">
+  <label for="weight">Weight (pounds)</label>
+  <button type="submit">Add package to shipment!</button>
+</form>
+
+
+@* <form action="/categories/@Model.Id/items" method="post">
+  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
+  <label for="itemDescription">Item Description</label>
+  <input id="itemDescription" name="itemDescription" type="text">
+  <button type='submit'>Add item</button>
+</form> *@
+
+route name = Create
+URL path = /ParentObject/:parent_id/ChildObject
+type = post

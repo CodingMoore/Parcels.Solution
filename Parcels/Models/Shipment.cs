@@ -2,7 +2,6 @@ using System.Collections.Generic;
 
 namespace Parcels.Models
 {
-
 public class Shipment
 {
   private static List<Shipment> _instances = new List<Shipment> {};
@@ -32,7 +31,7 @@ public class Shipment
   {
     return _instances[searchId -1];
   }
-}
 
+}
 
 }
